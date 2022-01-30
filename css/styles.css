@@ -1,3 +1,7 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+</style>
+
 /* CSS Reset */
 
 html,
@@ -128,6 +132,51 @@ table {
 /* Custom CSS */
 
 /*==========================
+Universal Styling 
+==========================*/
+h1.detail {
+  font-family: Roboto;
+  font-size: 30px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h1 .detail2 {
+  font-family: Roboto;
+  font-size: 30px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+span.name {
+  font-family: Roboto;
+  font-size: 30px;
+  color: #EE2525;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #050500;
+  font-weight: 400;
+}
+
+.btn {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color:#F8DF1F
+}
+
+
+/*==========================
   Burger Menu
 ==========================*/
 
@@ -174,7 +223,7 @@ table {
   width: 100%;
   height: 2px;
 
-  background-color: #3951aa;
+  background-color: #F8DF1F;
 
   transition-duration: 0.25s;
 }
@@ -202,8 +251,8 @@ table {
 
   list-style: none;
 
-  background-color: #ffffff;
-  box-shadow: 1px 0px 6px #f5d3c8;
+  background-color: #f3f3f3;
+  box-shadow: 1px 0px 6px #f3f3f3;
 
   transition-duration: 0.25s;
 }
@@ -212,10 +261,10 @@ table {
   display: block;
   padding: 12px 24px;
 
-  color: #f2526f;
+  color: #ee252f;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1em;
+  font-size: 18px;
   font-weight: 600;
 
   text-decoration: none;
@@ -223,7 +272,7 @@ table {
   transition-duration: 0.25s;
 }
 .menu__item:hover {
-  background-color: #f4d2c7;
+  background-color: #f8df1f;
 }
 /*==========================
   Top Nav
@@ -232,7 +281,7 @@ table {
 .element {
   display: none;
   overflow: hidden;
-  background-color: #d7e358;
+  background-color: #f8df1f;
   position: absolute;
   z-index: 1;
   height: 20%;
@@ -246,14 +295,24 @@ table {
 }
 
 .element .nav-items .nav-link {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #050500;
+    font-weight: 500;
+    padding: 1em;
+    text-decoration: none;
+}
 
+.element .nav-items .nav-link1 {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #ee252f;
+  font-weight: 500;
+  text-transform: uppercase;
   padding: 1em;
-  font-size: 1.25em;
-  position: relative;
-  font-family: "Century Gothic";
-  color: #000000;
   text-decoration: none;
 }
+
 .element .nav-items .nav-link:hover {
   color: #ff0909;
   opacity: 0.9;
@@ -272,39 +331,39 @@ Hero Image
 .background img {
   width:100%;
   height: auto;
-  opacity: 0.8;
+  opacity: 33%;
+  background-color: #3B3838;
   position: relative;
 }
 
-
 .hero-image .btn {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: rgb(242, 242, 0);
-  color: rgb(0, 0, 0);
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
   text-align: center;
 }
 
 .hero-image .logo1 {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: white;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
   text-align: center;
+}
+
+.hero-image .logo1 img {
+  width: 70%;
 }
 
 /*==========================
@@ -312,40 +371,53 @@ Menu + Contact US
 ==========================*/
 main section article {
   float: left;
-  padding: 0 0 0 4%;
+  padding: 0 0 6% 0;
   max-width: 65%;
 }
 
 main section aside {
   float: right;
-  padding: 0 4% 0 0;
+  padding: 0 5% 0 0;
   max-width: 65%;
 }
 
 main section .section1 {
-  background-color: #ffffff;
-  min-height:190px;
-  padding: 1% 0 0 0;
+  height: 350px;
+  padding: 0 0 5% 0;
 }
 
 main section .section2 {
-  background-color: #f0a8a8;
+  background-color: #f3f3f3;
   height:fit-content;
-  min-height:190px;
-  padding: 1% 0 0 0;
+  height:380px;
+  padding: 1% 0 1% 0;
 }
 
 main section .btn {
-    background-color: rgb(242, 242, 0);
-    color: rgb(0, 0, 0);
-    font-size: 16px;
     padding: 1.5%;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
     text-align: center;
     margin: 1% 0 0 0;
 }
+
+main section .section1 img {
+  max-width: 95%;
+}
+
+main section .section1 img {
+  max-width: 65%;
+}
+
+/*h1.detail {
+  color: rgb(34, 25, 187);
+  font-size: 1.5em;
+}
+
+span.name {
+  color: rgb(102, 33, 33);
+  font-size: 1.5em;
+}*/
 
 /*==========================
 Footer
@@ -353,17 +425,42 @@ Footer
 
 
 footer {
-  background-color: #000000;
+  background-color: #080801;
   min-height: 100px;
   padding: 1%;
   text-align: center;
-  border-top: 6px solid red;
+  border-top: 6px solid #ee252f;
 }
 
 
 /*==========================
 Media Queries 
 ==========================*/
+
+@media screen and (min-width: 576px) {
+  main section article {
+    float: left;
+    padding: 0 0 0 9%;
+    max-width: 65%;
+  }
+  
+  main section aside {
+    float: right;
+    padding: 0 9% 0 0;
+    max-width: 65%;
+  }
+  main section .section1 {
+    height: 250px;
+    padding: 0 0 5% 0;
+  }
+  
+  main section .section2 {
+    background-color: #f3f3f3;
+    height:fit-content;
+    height:250px;
+    padding: 1% 0 1% 0;
+  }
+}
 
 @media screen and (min-width: 780px) {
   .hamburger-menu {
@@ -373,6 +470,26 @@ Media Queries
     display: block;
   }
   .element .nav-items .nav-link {
-    font-size: 1.5em;
+    font-size: 18px;
+  }
+  main section .section1 {
+    height: 220px;
+    padding: 0 0 5% 0;
+  }
+  
+  main section .section2 {
+    background-color: #f3f3f3;
+    height:fit-content;
+    height:220px;
+    padding: 1% 0 1% 0;
+  }
+  main section .section1 img {
+    max-width: 100%;
+  }
+  
+  main section .section1 img {
+    max-width: 100%;
   }
 }
+}
+
