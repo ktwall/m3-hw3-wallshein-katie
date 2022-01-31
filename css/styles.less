@@ -1,28 +1,214 @@
 @import "./variables.less";
 @import "./mixins.less";
 
-html, body {
-    // reset
-    #reset();
+html,
+body {
+  // reset
+  #reset();
 }
 
 // Top Nav
 .element {
-    .nav ();
-    .element .nav-items {
-        display: flex;
-        justify-content: left;
-        margin: 5%;
-    }
-    .element .nav-items .nav-link1 {
-      color: @headingspan;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
+  .nav ();
+  .element .nav-items {
+    display: flex;
+    justify-content: left;
+    margin: 5%;
+  }
+  .element .nav-items .nav-link1 {
+    color: @headingspan;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 }
 
-//Button 
+//Burger Menu
+#menu__toggle {
+  .nav ();
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: @background;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 15em;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: @backgroundsection;
+  box-shadow: 1px 0px 6px @backgroundsection;
+  transition-duration: 0.25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: @headingspan;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: @background;
+}
+
+//Button
 .heroimage .btn {
-    .button();
+  .button();
 }
 
+.heroimage {
+  .bannerimage();
+}
+
+.main {
+  main section {
+    article {
+      float: left;
+      padding: 0 0 6% 0;
+      max-width: 65%;
+    }
+    aside {
+      float: right;
+      padding: 0 5% 0 0;
+      max-width: 65%;
+    }
+    .section1 {
+      height: 350px;
+      padding: 0 0 5% 0;
+    }
+    .section2 {
+      background-color: @backgroundsection;
+      height: fit-content;
+      height: 380px;
+      padding: 1% 0 1% 0;
+    }
+    .btn {
+      padding: 1.5%;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      margin: 1% 0 0 0;
+    }
+    .section1 img {
+      max-width: 95%;
+    }
+    .section1 img {
+      max-width: 65%;
+    }
+  }
+}
+
+footer {
+  .footer ();
+  min-height: 100px;
+  padding: 1%;
+  text-align: center;
+}
+
+/*==========================
+Media Queries 
+==========================*/
+
+@media screen and (min-width: 576px) {
+  main section article {
+    float: left;
+    padding: 0 0 0 9%;
+    max-width: 65%;
+  }
+
+  main section aside {
+    float: right;
+    padding: 0 9% 0 0;
+    max-width: 65%;
+  }
+  main section .section1 {
+    height: 250px;
+    padding: 0 0 5% 0;
+  }
+
+  main section .section2 {
+    background-color: #f3f3f3;
+    height: fit-content;
+    height: 250px;
+    padding: 1% 0 1% 0;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .element {
+    display: block;
+  }
+  .element .nav-items .nav-link {
+    font-size: 18px;
+  }
+  main section .section1 {
+    height: 220px;
+    padding: 0 0 5% 0;
+  }
+
+  main section .section2 {
+    background-color: #f3f3f3;
+    height: fit-content;
+    height: 220px;
+    padding: 1% 0 1% 0;
+  }
+  main section .section1 img {
+    max-width: 100%;
+  }
+
+  main section .section1 img {
+    max-width: 100%;
+  }
+}

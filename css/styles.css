@@ -134,7 +134,7 @@ table {
 Universal Styling 
 ==========================*/
 h1.detail {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;;
   font-size: 30px;
   color: #050500;
   font-weight: 500;
@@ -142,7 +142,7 @@ h1.detail {
 }
 
 h1 .detail2 {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;;
   font-size: 30px;
   color: #050500;
   font-weight: 500;
@@ -150,7 +150,7 @@ h1 .detail2 {
 }
 
 span.name {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
   color: #EE2525;
   font-weight: 500;
@@ -158,14 +158,14 @@ span.name {
 }
 
 p {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;;
   font-size: 16px;
   color: #050500;
   font-weight: 400;
 }
 
 .btn {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;;
   font-size: 18px;
   color: #050500;
   font-weight: 500;
@@ -262,7 +262,7 @@ p {
 
   color: #ee252f;
 
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;;
   font-size: 18px;
   font-weight: 600;
 
@@ -294,7 +294,7 @@ p {
 }
 
 .element .nav-items .nav-link {
-    font-family: Roboto;
+    font-family:'Source Sans Pro', sans-serif;;
     font-size: 18px;
     color: #050500;
     font-weight: 500;
@@ -303,7 +303,7 @@ p {
 }
 
 .element .nav-items .nav-link1 {
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;;
   font-size: 18px;
   color: #ee252f;
   font-weight: 500;
