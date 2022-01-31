@@ -1,0 +1,70 @@
+
+
+// spacing reset
+#reset {
+    padding: 0;
+    margin: 0;
+  }
+
+.nav {
+    color: @links;
+    font-weight: @mainfontweight;
+    text-decoration: none;
+    background-color: @background;
+    font-size: @links-font;
+    font-family: @font-family;
+    overflow: hidden;
+    z-index: 1;
+    height: 20%;
+    width: 100%;
+}
+
+.button {
+  color: @links;
+  text-decoration: none;
+  background-color: @background;
+  font-size: @links-font;
+  font-family: @font-family;
+  border-radius: 8px;
+}
+
+.bannerimage {
+  .hero-image {
+    position: relative;
+    width: 100%;
+  }
+  .background img {
+    width:100%;
+    height: auto;
+    opacity: 33%;
+    background-color: #3B3838;
+    position: relative;
+  }
+  .hero-image .btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: @links-font;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hero-image .logo1 {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hero-image .logo1 img {
+    width: 70%;
+  }
+}
