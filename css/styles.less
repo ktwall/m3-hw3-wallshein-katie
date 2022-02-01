@@ -107,10 +107,12 @@ body {
   .nav-items .nav-link {
     padding: 1em;
     font-size: 18px;
-    color: #050500;
+    color: @links-font;
     font-weight: 500;
     text-decoration: none;
   }
+  display:none;
+  background-color: @background;
 }
 
 //Universal 
@@ -164,7 +166,7 @@ p {
 }
 .hero-image .btn {
   position: absolute;
-  top: 70%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -177,7 +179,7 @@ p {
 }
 .hero-image .logo1 {
   position: absolute;
-  top: 48%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -195,13 +197,15 @@ p {
   main section {
     article {
       float: left;
-      padding: 0 0 6% 0;
-      max-width: 65%;
+      padding: 0 0 5% 0;
+      max-width: 55%;
+      width:30%;
     }
     aside {
       float: right;
       padding: 0 5% 0 0;
-      max-width: 65%;
+      max-width: 55%;
+      width: 30%;
     }
     .section1 {
       height: 350px;
@@ -220,13 +224,20 @@ p {
       text-align: center;
       margin: 1% 0 0 0;
     }
-    .section1 img {
-      max-width: 95%;
-    }
-    .section1 img {
-      max-width: 65%;
-    }
   }
+}
+
+.section1, section2 {
+  padding: 1%
+}
+
+.burger {
+  max-width: 45%;
+  margin: 10%;
+}
+.bob {
+  max-width: 55%;
+  padding: 10%;
 }
 
 footer {
@@ -292,5 +303,17 @@ Media Queries
 
   main section .section1 img {
     max-width: 100%;
+  }
+  .hero-image .btn {
+    top: 65%;
+  }
+  .hero-image .logo1 {
+    top: 45%;
+  }
+  .burger {
+    min-width: 100%;
+  }
+  .bob {
+    min-width: 100%;
   }
 }
