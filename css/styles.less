@@ -9,16 +9,27 @@ body {
 
 // Top Nav
 .element {
-  .nav ();
-  .element .nav-items {
+  .nav-items {
+    .nav ();
     display: flex;
     justify-content: left;
     margin: 5%;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    height: 20%;
+    width: 100%;
   }
-  .element .nav-items .nav-link1 {
+  .nav-items .nav-link1 {
     color: @headingspan;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em;
+  }
+  .nav-items .nav-link {
+    padding: 1em;
   }
 }
 
@@ -107,7 +118,42 @@ body {
 
 //Banner Image
 .heroimage {
-  .bannerimage();
+  position: relative;
+  width: 100%;
+}
+.background img {
+  width: 100%;
+  height: auto;
+  opacity: 33%;
+  background-color: #3b3838;
+  position: relative;
+}
+.hero-image .btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: @links-font;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.hero-image .logo1 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.hero-image .logo1 img {
+  width: 70%;
 }
 
 //Article + Aside
